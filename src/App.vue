@@ -1,7 +1,11 @@
 <template>
-  <div >
-      <router-link to="/">Home</router-link> |
-      <router-link to="/world">About</router-link>
+  <div>
+    <div>
+      <router-link to="/">Контекстная реклама</router-link> |</div>
+    <div>
+      <router-link to="/seo">SEO</router-link>
+    </div>
+
     <router-view />
   </div>
 </template>

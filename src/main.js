@@ -1,28 +1,21 @@
-// import Vue from 'vue'
-// import App from './App.vue'
 
-// Vue.config.productionTip = false
-
-// new Vue({
-//   render: h => h(App),
-// }).$mount('#app')
 
 
 import Vue from "vue";
 import App from "@/App.vue";
 import VueRouter from "vue-router";
-import HelloWorld from "@/components/HelloWorld";
-import World from "@/components/World";
+import СontextualAvertising from "@/components/СontextualAvertising";
+import Seo from "@/components/Seo";
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "",
-    component: HelloWorld,
+    component: СontextualAvertising,
   },
   {
-    path: "/world",
-    component: World,
+    path: "/seo",
+    component: Seo,
   },
 ];
 
