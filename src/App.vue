@@ -1,16 +1,20 @@
 <template>
   <div>
-    <div>
-      <router-link to="/">Контекстная реклама</router-link>      |
-   </div>
-    <div>
-      <router-link to="/seo">SEO</router-link>
-    </div>
-    <div>
-      <router-link to="/smm">Smm</router-link>
-    </div>
-    <div>
-      <router-link to="/target">Target</router-link>
+    <div class="d-flex flex-row  mt-3 mb-3">
+      <div class="m-3 p-2 w-25 text-center bg-secondary fs-5">
+        <router-link to="/" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"><div class="text-light">Контекстная реклама</div></router-link>
+      </div>
+
+      <div class="m-3 p-2 w-25 text-center bg-secondary fs-5">
+        <router-link to="/seo" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"><div class="text-light">Seo</div></router-link>
+      </div>
+      <div class="m-3 p-2 w-25 text-center bg-secondary fs-5">
+        <router-link to="/smm" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"><div >Smm</div></router-link>
+      </div>
+      <div class="m-3 p-2 w-25 text-center bg-secondary fs-5">
+        <router-link to="/target" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"><div class="text-light">Target</div></router-link
+        >
+      </div>
     </div>
     <router-view />
   </div>
