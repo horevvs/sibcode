@@ -8,6 +8,8 @@ import СontextualAvertising from "@/components/СontextualAvertising";
 import Seo from "@/components/Seo";
 import Smm from "@/components/Smm";
 import Target from "@/components/Target";
+import Add from "@/components/Add";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -26,6 +28,10 @@ const routes = [
   {
     path: "/target",
     component: Target,
+  },
+  {
+    path: "/add",
+    component: Add,
   }
 ];
 
@@ -38,5 +44,8 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
+  data: {
+    visible: true
+},
   render: (h) => h(App),
 }).$mount("#app");
