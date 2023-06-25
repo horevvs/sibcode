@@ -1,13 +1,18 @@
 <template>
-    <div >
-     
-    target
-    </div>
-  </template>
-  
+  <div  class="hello">
+   <UnderHeader/>
+  </div>
+</template>
+
+
+
 <script>
+import UnderHeader from "./UnderHeader.vue";
 
-
-
-
-</script>
+export default {
+ name: "App",
+ components: {
+   UnderHeader,
+ },
+};
+</script> 
