@@ -6,7 +6,7 @@
 
 
 
-<script>
+<!-- <script>
 import UnderHeader from "./UnderHeader.vue";
 
 export default {
@@ -15,4 +15,4 @@ export default {
    UnderHeader,
  },
 };
-</script> 
+</script>  -->

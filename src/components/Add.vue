@@ -8,7 +8,7 @@
             <label for="exampleInputEmail1" class="form-label">Название</label>
             <input
               type="email"
-              class="form-control border control border-secondary  bg-secondary-subtle w-25"
+              class="form-control border control border-secondary bg-secondary-subtle w-25"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
@@ -17,15 +17,21 @@
       </div>
 
       <div>
+        <div class="point">
+          <div>
+            <router-link class="text-dark" to="/archive"> Инструкции по применению </router-link>
+            <router-view />
+          </div>
+        </div>
 
-        <div class="point" >Инструкция по подключению</div>
-
-        <div class="mt-2 point" v-on:click="visible=!visible">Подключение Яндекс Метрика</div>
-        <form  v-show="visible">
-          <div  class=" d-flex flex-column">
+        <div class="mt-2 point" v-on:click="visible = !visible">
+          Подключение Яндекс Метрика
+        </div>
+        <form v-show="visible">
+          <div class="d-flex flex-column">
             <input
               type="email"
-              class="form-control-sm  form-input bg-secondary-subtle col-4"
+              class="form-control-sm form-input bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Введите ключ API"
@@ -33,7 +39,7 @@
 
             <input
               type="email"
-              class="form-control-sm  mt-3 form-input bg-secondary-subtle col-4"
+              class="form-control-sm mt-3 form-input bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Введите username от Метрика"
@@ -58,7 +64,9 @@
         </form>
       </div>
 
-      <div class="mt-2 point" v-on:click="visible2 = !visible2">Подключение Яндекс Директ</div>
+      <div class="mt-2 point" v-on:click="visible2 = !visible2">
+        Подключение Яндекс Директ
+      </div>
       <form v-show="visible2">
         <div class="mb-3 d-flex flex-column">
           <input
@@ -87,7 +95,9 @@
         </div>
       </form>
 
-      <div class="mt-2 point" v-on:click="visible3 = !visible3">Подключение Яндекс Callibri</div>
+      <div class="mt-2 point" v-on:click="visible3 = !visible3">
+        Подключение Яндекс Callibri
+      </div>
       <form v-show="visible3">
         <div class="mb-3 d-flex flex-column">
           <input
@@ -116,7 +126,9 @@
         </div>
       </form>
 
-      <div class="mt-2 point" v-on:click="visible4 = !visible4">Подключение Топ визор</div>
+      <div class="mt-2 point" v-on:click="visible4 = !visible4">
+        Подключение Топ визор
+      </div>
       <form v-show="visible4">
         <div class="mb-3 d-flex flex-column">
           <input
@@ -159,7 +171,9 @@
         </div>
       </form>
 
-      <div  class="mt-2 point" v-on:click="visible5 = !visible5">Подключение VK</div>
+      <div class="mt-2 point" v-on:click="visible5 = !visible5">
+        Подключение VK
+      </div>
       <form v-show="visible5">
         <div class="mb-3 d-flex flex-column">
           <input
@@ -188,12 +202,10 @@
         </div>
       </form>
 
-      <button type="button" class="btn mt-3 col-3 bg-secondary-subtle">Добавить проект</button>
+      <button type="button" class="btn mt-3 col-3 bg-secondary-subtle">
+        Добавить проект
+      </button>
     </div>
-
-    
-
-    
   </div>
 </template>
 
@@ -208,6 +220,7 @@ export default {
       visible3: false,
       visible4: false,
       visible5: false,
+     
     };
   },
 };

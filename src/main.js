@@ -9,6 +9,7 @@ import Seo from "@/components/Seo";
 import Smm from "@/components/Smm";
 import Target from "@/components/Target";
 import Add from "@/components/Add";
+import Archive from "@/components/Archive";
 
 Vue.use(VueRouter);
 
@@ -32,6 +33,10 @@ const routes = [
   {
     path: "/add",
     component: Add,
+  },
+  {
+    path: "/archive",
+    component: Archive,
   }
 ];
 
@@ -54,15 +59,6 @@ new Vue({
       visible5: false
      }
   },
-
-
-  methods: {
-    increment() {
-      // `this` указывает на экземпляр компонента
-      this.count++
-    }
-  },
-  
   
   render: (h) => h(App),
 }).$mount("#app");
