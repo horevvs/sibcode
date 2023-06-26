@@ -44,8 +44,25 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
-  data: {
-    visible: true
+
+  data() {
+    return { 
+      visible: false,
+      visible2: false,
+      visible3: false,
+      visible4: false,
+      visible5: false
+     }
   },
+
+
+  methods: {
+    increment() {
+      // `this` указывает на экземпляр компонента
+      this.count++
+    }
+  },
+  
+  
   render: (h) => h(App),
 }).$mount("#app");
