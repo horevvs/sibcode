@@ -9,7 +9,7 @@ import Seo from "@/components/Seo";
 import Smm from "@/components/Smm";
 import Target from "@/components/Target";
 import Add from "@/components/Add";
-import Archive from "@/components/Archive";
+import Manual from "@/components/Manual";
 
 Vue.use(VueRouter);
 
@@ -35,8 +35,8 @@ const routes = [
     component: Add,
   },
   {
-    path: "/archive",
-    component: Archive,
+    path: "/manual",
+    component: Manual,
   }
 ];
 

@@ -19,7 +19,7 @@
       <div>
         <div class="point">
           <div>
-            <router-link class="text-dark" to="/archive"> Инструкции по применению </router-link>
+            <router-link class="text-dark fw-bold" to="/manual"> Инструкция по применению </router-link>
             <router-view />
           </div>
         </div>
