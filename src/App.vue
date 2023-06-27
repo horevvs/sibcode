@@ -31,13 +31,29 @@
     <button  type="button" class="btn btns btn-secondary link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"> Добавить проект</button>
     </router-link>
     <button type="button" class="btn btn-secondary "><a href="https://report-dev.uat.sibcode.team/login" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Выход</a> </button>
-    
- 
   </div>
 
 
     <router-view />
+    <Archive  />
   </div>
 </template>
 
+
+<script>
+import Archive from "./components/Archive.vue";
+
+export default {
+ name: "App",
+ components: {
+  Archive,
+ },
+ data() {
+    return {
+      visible6: false,
+      visible7: true,
+    };
+  },
+};
+</script> 
 

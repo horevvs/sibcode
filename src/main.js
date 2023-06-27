@@ -10,6 +10,7 @@ import Smm from "@/components/Smm";
 import Target from "@/components/Target";
 import Add from "@/components/Add";
 import Manual from "@/components/Manual";
+import Archive from "@/components/Archive";
 
 Vue.use(VueRouter);
 
@@ -37,7 +38,11 @@ const routes = [
   {
     path: "/manual",
     component: Manual,
-  }
+  },
+  {
+    path: "/archive",
+    component: Archive,
+  },
 ];
 
 const router = new VueRouter({
@@ -56,7 +61,8 @@ new Vue({
       visible2: false,
       visible3: false,
       visible4: false,
-      visible5: false
+      visible5: false,
+      visible6: false
      }
   },
   
