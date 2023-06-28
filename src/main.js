@@ -65,6 +65,13 @@ new Vue({
       visible6: false
      }
   },
+  methods:{
+    Hide: function(){
+      alert('hello world')
+    }},
+ 
+
+
   
   render: (h) => h(App),
 }).$mount("#app");

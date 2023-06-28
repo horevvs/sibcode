@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       visible6: false,
-      visible7: true,
+      visible7: false,
     };
   },
 };
