@@ -3,19 +3,19 @@
     <div>
       <div class="d-flex rounded-circleflex-row mt-3 mx-3 mb-3">
         <div
-          v-on:click="Hide"
+          v-on:click="Hide2"
           class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5"
         >
           <router-link
             to="/"
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
           >
-            <div class="text-light">Контекстная реклама</div></router-link
+            <div  class="text-light">Контекстная реклама</div></router-link
           >
         </div>
 
         <div
-          v-on:click="Hide"
+          v-on:click=" Hide2"
           class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5"
         >
           <router-link
@@ -26,7 +26,7 @@
         </div>
 
         <div
-          v-on:click="Hide"
+          v-on:click="Hide2"
           class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5"
         >
           <router-link
@@ -36,7 +36,8 @@
           </router-link>
         </div>
 
-        <div class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
+        <div
+        v-on:click="Hide2" class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
           <router-link
             to="/target"
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
@@ -86,7 +87,7 @@ export default {
   },
   methods: {
     Hide: function () {
-      if (this.visible7 == false) {
+      if (this.visible7 == false ) {
         this.visible7 = !this.visible7;
       }
     },
@@ -94,7 +95,15 @@ export default {
       if (this.visible7 == true) {
         this.visible7 = !this.visible7;
       }
+
     },
+     Hide2: function () {
+      if (this.visible8 == false) {
+        this.visible8 = !this.visible8;
+      }
+      window.location.reload()
+    },
+    
   },
 };
 </script> 
