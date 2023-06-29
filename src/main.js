@@ -11,6 +11,7 @@ import Target from "@/components/Target";
 import Add from "@/components/Add";
 import Manual from "@/components/Manual";
 import Archive from "@/components/Archive";
+import Changeproject from "@/components/Changeproject";
 
 Vue.use(VueRouter);
 
@@ -43,8 +44,14 @@ const routes = [
     path: "/archive",
     component: Archive,
   },
+  {
+    path: "/changeproject",
+    component: Changeproject,
+  },
 ];
 
+
+Changeproject
 const router = new VueRouter({
   routes,
   mode: "history",

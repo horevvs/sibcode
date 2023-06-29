@@ -1,13 +1,55 @@
 
 <template>
-  <div v-on:click="visible6 = !visible6">
-    <div class="d-flex mt-2 mx-5 col-5 bg-warning justify-content-between">
+  <div>
+    <div class="d-flex mt-2 mx-5 col-5  justify-content-between">
       <div>Список Активных проектов</div>
-      <button type="button" class="btn btn-secondary btn-sm">Архив</button>
+      <button
+        v-on:click="visible6 = !visible6"
+        type="button"
+        class="btn btn-secondary btn-sm"
+      >
+        Архив
+      </button>
     </div>
 
-    <div class="mx-5 col-5 bg-warning" v-show="visible6">
-      будет какой-то текст с компонентами ссылками и роутами
+    <div class="mx-5 col-5" v-show="visible6">
+      <div class="d-flex justify-content-around">
+        <router-link
+            to="/add"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">qwe</div></router-link
+          >
+          <router-link
+            to="/add"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">(Из архива)</div></router-link
+          >
+   
+        <router-link
+            to="/manual"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">Настройки</div></router-link
+          >
+      </div>
+
+      <div class="d-flex justify-content-around">
+        <router-link
+            to="/add"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">test</div></router-link
+          >
+          <router-link
+            to="/add"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">(Из архива)</div></router-link
+          >
+   
+        <router-link
+            to="/manual"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">Настройки</div></router-link
+          >
+      </div>
     </div>
   </div>
 </template>
