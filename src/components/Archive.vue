@@ -10,6 +10,7 @@
       >
         Архив
       </button>
+      
     </div>
 
     <div class="mx-5 col-5" v-show="visible6">
