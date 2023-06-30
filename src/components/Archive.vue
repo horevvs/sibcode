@@ -75,26 +75,12 @@ export default {
     };
   },
   methods: {
-    Hide2: function () {
-      // if (this.visible8 == false) {
-      //   this.visible8 = !this.visible8;
-      // }
-      window.location.reload()
-    },
     Hideshow2: function () {
       if (this.visible8 == true) {
         this.visible8 = !this.visible8;
-
       }
-
-
-
-
     },
   }
-
-
-
 };
 </script> 
 

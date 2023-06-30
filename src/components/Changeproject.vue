@@ -1,29 +1,32 @@
 <template>
     <div>
-      <!-- <div class="fs-3 adds">Добавить проект</div>
+      <div class="fs-3 adds">Изменить проект</div>
+
       <div class="d-flex flex-column p-5">
-        <div class="mt-5">
+        <div>
+          <div class="point">
+            <div>
+              <router-link class="text-dark fs-4 fw-bold" to="/manual"> Инструкция по применению </router-link>
+              <router-view />
+            </div>
+          </div>
+
+           <div class="mt-2">
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Название</label>
+              <label for="exampleInputEmail1" class="form-label">test</label>
               <input
                 type="email"
+                value="test"
                 class="form-control border control border-secondary bg-secondary-subtle w-25"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
             </div>
           </form>
-        </div>
-  
-        <div>
-          <div class="point">
-            <div>
-              <router-link class="text-dark fw-bold" to="/manual"> Инструкция по применению </router-link>
-              <router-view />
-            </div>
-          </div>
-  
+        </div> 
+
+
           <div class="mt-2 point" v-on:click="visible = !visible">
             Подключение Яндекс Метрика
           </div>
@@ -33,12 +36,14 @@
                 type="email"
                 class="form-control-sm form-input bg-secondary-subtle col-4"
                 id="exampleInputEmail1"
+                value="y0_AgAAAABbQ5XTAAjzIQAAAADX5uQg-iyJ4nrmTTe6cAuMcxWtIaVoaFE"
                 aria-describedby="emailHelp"
                 placeholder="Введите ключ API"
               />
   
               <input
                 type="email"
+                value="absteplo-369388-nizy"
                 class="form-control-sm mt-3 form-input bg-secondary-subtle col-4"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
@@ -47,6 +52,7 @@
   
               <input
                 type="email"
+                value="1"
                 class="form-control-sm mt-3 form-input bg-secondary-subtle col-4"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
@@ -55,6 +61,7 @@
   
               <input
                 type="email"
+                value="22244420: 41870524, 41870746, 44049263, 227893731"
                 class="form-control-sm mt-3 form-input bg-secondary-subtle col-4"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
@@ -71,6 +78,7 @@
           <div class="mb-3 d-flex flex-column">
             <input
               type="email"
+              value="y0_AgAAAABbQ5XTAAjzIQAAAADX5uQg-iyJ4nrmTTe6cAuMcxWtIaVoaFE"
               class="form-control-sm mt-3 form-input bg-secondary-subtle col-4"
               id="yandexApi"
               aria-describedby="emailHelp"
@@ -79,6 +87,7 @@
   
             <input
               type="email"
+              value="absteplo-369388-nizy"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="usernameMetrika"
               aria-describedby="emailHelp"
@@ -87,6 +96,7 @@
   
             <input
               type="email"
+              value="1"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="idCompany"
               aria-describedby="emailHelp"
@@ -102,6 +112,7 @@
           <div class="mb-3 d-flex flex-column">
             <input
               type="email"
+              value="SftVVxNbhLc_DqFtUXmq"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -110,6 +121,7 @@
   
             <input
               type="email"
+              value="kav@webstripe.ru"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -118,6 +130,7 @@
   
             <input
               type="email"
+              value="54423"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -133,6 +146,7 @@
           <div class="mb-3 d-flex flex-column">
             <input
               type="email"
+              value="ee4aaa71d3da820d6a38ef1e219d4a9d"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -141,6 +155,7 @@
   
             <input
               type="email"
+              value="98402"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -149,6 +164,7 @@
   
             <input
               type="email"
+              value="6667521"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -156,6 +172,7 @@
             />
             <input
               type="email"
+              value="87"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -163,6 +180,7 @@
             />
             <input
               type="email"
+              value="нагревательные секции (в стяжку, обогрев грунта, прогрев бетона)"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -178,6 +196,7 @@
           <div class="mb-3 d-flex flex-column">
             <input
               type="email"
+              value="vk1.a.njvSBulI6DeSD9xCE-YZXWCu0KpSOJ4bYVl0Mr2FMG7XbnRx_-V_4hvCQrux48GC-0-W90JlevmDCSxhQ5rOYl0y30XGFifQqWkV3OIjuLTE8hckwY0jCi0YFLa8kykWGl3NBVP4aNOTO610i74vnPuw2ZxLEr8U3RYhMCaWgY-zEIsWDhuoPBOiUK5AGdRho71f63WN0hflMyBAw_h88A"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -186,6 +205,7 @@
   
             <input
               type="email"
+              value="1900015007"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -194,6 +214,7 @@
   
             <input
               type="email"
+              value="1606939860"
               class="form-control-sm mt-3 bg-secondary-subtle col-4"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
@@ -203,12 +224,9 @@
         </form>
   
         <button type="button" class="btn mt-3 col-3 bg-secondary-subtle">
-          Добавить проект
+          Сохранить
         </button>
-      </div> -->
-
-
-      dsdsds
+      </div>
     </div>
   </template>
   
