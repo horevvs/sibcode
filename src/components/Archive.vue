@@ -17,7 +17,7 @@
       <div >
         <div class="d-flex justify-content-around">
         <router-link
-            to="/add"
+            to="/generateaReport"
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
             ><div class="text-dark">qwe</div></router-link
           >
@@ -36,7 +36,7 @@
 
       <div class="d-flex justify-content-around">
         <router-link
-            to="/add"
+            to="/generateaReport" 
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
             ><div class="text-dark">test</div></router-link
           >

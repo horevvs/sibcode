@@ -12,6 +12,7 @@ import Add from "@/components/Add";
 import Manual from "@/components/Manual";
 import Archive from "@/components/Archive";
 import Changeproject from "@/components/Changeproject";
+import GenerateaReport from "@/components/GenerateaReport";
 
 Vue.use(VueRouter);
 
@@ -47,6 +48,10 @@ const routes = [
   {
     path: "/changeproject",
     component: Changeproject,
+  },
+  {
+    path: "/generateaReport",
+    component: GenerateaReport,
   },
 ];
 
