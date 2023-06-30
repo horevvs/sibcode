@@ -81,6 +81,11 @@ export default {
   },
   data() {
     return {
+      visible: false,
+      visible2: false,
+      visible3: false,
+      visible4: false,
+      visible5: false,
       visible6: false,
       visible7: true,
     };
@@ -103,8 +108,12 @@ export default {
       }
       window.location.reload()
     },
-    
-  },
+    Hideshow2: function () {
+      if (this.visible8 == true) {
+        this.visible8 = !this.visible8;
+      }
+    }
+  }
 };
 </script> 
 
