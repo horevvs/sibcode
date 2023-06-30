@@ -3,7 +3,7 @@
     <div>
       <div class="d-flex rounded-circleflex-row mt-3 mx-3 mb-3">
         <div
-          @click="Hide2"
+          v-on:click="Hide2"
           class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5"
         >
           <router-link

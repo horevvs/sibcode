@@ -75,6 +75,8 @@ export default {
     };
   },
   methods: {
+    Hide2: function () {
+    },
     Hideshow2: function () {
       if (this.visible8 == true) {
         this.visible8 = !this.visible8;
