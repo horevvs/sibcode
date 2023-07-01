@@ -50,7 +50,7 @@
       </button>
     </div>
 
-    <div v-show="hide"> Отчетный период за  {{ value2 }} - {{ value3 }}</div>
+    <div class="fs-5" v-show="hide"> Отчетный период за:  {{ value2 }} - {{ value3 }}</div>
   </div>
 </template>
 
