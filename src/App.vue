@@ -87,12 +87,17 @@ export default {
       }
     },
     Hideshow: function () {
+      
       if (this.visible7 == true) {
         this.visible7 = !this.visible7;
       }
 
     },
      Hide2: function () {
+
+
+
+
       if (this.visible8 == false) {
         this.visible8 = !this.visible8;
       }
@@ -103,7 +108,13 @@ export default {
         this.visible8 = !this.visible8;
       }
     }
-  }
+  },
+  mounted(){
+  
+  console.log('маунтиться');
+  console.log(this.visible7);
+}
+
 };
 </script> 
 

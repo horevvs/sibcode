@@ -1,5 +1,5 @@
 <template>
-  <container class="add_page mx-5">
+  <div class="add_page mx-5">
     <div class="add_page-header fs-3 text-center mb-3 text-warning">Общая информация</div>
     <ul>
       <li style="font-size: 24px">
@@ -126,6 +126,6 @@
         </button>
       </div>
     </ul>
-  </container>
+  </div>
 </template>
   

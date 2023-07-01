@@ -21,7 +21,7 @@
 
     <div class="text-center">Формирование отчёта</div>
 
-    <div class="d-flex">
+    <div class="d-flex mt-3">
       <div class="mx-2">
         <section>
           <date-picker
@@ -33,7 +33,6 @@
         </section>
       </div>
       -
-
       <div class="mx-2">
         <section>
           <date-picker
@@ -51,7 +50,32 @@
     </div>
 
     <div class="fs-5" v-show="hide"> Отчетный период за:  {{ value2 }} - {{ value3 }}</div>
+
+    <div class="form-check mt-3">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+  <label class="form-check-label" for="flexCheckDefault">
+    Показать динамику
+  </label>
+</div>
+
+<div class="form-check mt-2">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label " for="flexCheckDefault">
+    Показать результат по группе запросов 
+  </label>
+</div>
+
+
+
+
+
+
+
+
   </div>
+
+
 </template>
 
 
@@ -100,7 +124,7 @@ export default {
       }
     },
     Showreport: function () {
-      if (this.hide !== true) {
+      if (this.hide !== true  ) {
         this.hide = !this.hide;
       }
     },

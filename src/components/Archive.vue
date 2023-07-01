@@ -1,69 +1,66 @@
 
 <template>
-  <div  v-show="visible8"   >
+  <div v-show="visible8">
+    <div v-show="visible9">
+      <div class="d-flex mt-2 mx-5 col-5 justify-content-between">
+        <div>Список Активных проектов</div>
+        <button
+          v-on:click="visible6 = !visible6"
+          type="button"
+          class="btn btn-secondary btn-sm"
+        >
+          Архив
+        </button>
+      </div>
 
-<div  v-show="visible9">
+      <div class="mx-5 col-5" v-show="visible6">
+        <div>
+          <div class="d-flex justify-content-around">
+            <router-link
+              to="/generateaReport"
+              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              ><div v-on:click="visible9 = !visible9" class="text-dark">
+                qwe
+              </div></router-link
+            >
+            <router-link
+              to="/changeproject"
+              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              ><div class="text-dark">(Из архива)</div></router-link
+            >
 
+            <router-link
+              to="/changeproject"
+              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              ><div v-on:click="Hideshow2" class="text-dark">
+                Настройки
+              </div></router-link
+            >
+          </div>
 
-    <div  class="d-flex mt-2 mx-5 col-5  justify-content-between">
-      <div >Список Активных проектов</div>
-      <button
-        v-on:click="visible6 = !visible6"
-        type="button"
-        class="btn btn-secondary btn-sm"
-      >
-        Архив
-      </button>
-      
-    </div>
+          <div class="d-flex justify-content-around">
+            <router-link
+              to="/generateaReport"
+              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              ><div class="text-dark">test</div></router-link
+            >
+            <router-link
+              to="/add"
+              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              ><div class="text-dark">(Из архива)</div></router-link
+            >
 
-    <div class="mx-5 col-5" v-show="visible6">
-      <div >
-        <div   class="d-flex justify-content-around">
-        <router-link 
-            to="/generateaReport"
-            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-            ><div     v-on:click="visible9 = !visible9"   class="text-dark">qwe</div></router-link
-          >
-          <router-link
-            to="/changeproject"
-            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-            ><div class="text-dark">(Из архива)</div></router-link
-          >
-   
-        <router-link  
-            to="/changeproject"
-            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-            ><div   v-on:click="Hideshow2" class="text-dark">Настройки</div></router-link
-          >
-      </div> 
-
-      <div class="d-flex justify-content-around">
-        <router-link
-            to="/generateaReport" 
-            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-            ><div class="text-dark">test</div></router-link
-          >
-          <router-link
-            to="/add"
-            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-            ><div class="text-dark">(Из архива)</div></router-link
-          >
-   
-        <router-link
-            to="/changeproject"
-            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-            ><div v-on:click="Hideshow2" class="text-dark">Настройки</div></router-link
-          >
+            <router-link
+              to="/changeproject"
+              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+              ><div v-on:click="Hideshow2" class="text-dark">
+                Настройки
+              </div></router-link
+            >
+          </div>
+        </div>
       </div>
     </div>
-
-
-
-  </div>
-
-      </div>
-   
   </div>
 </template>
 
@@ -86,7 +83,7 @@ export default {
   },
   methods: {
     Hide: function () {
-      if (this.visible7 == false ) {
+      if (this.visible7 == false) {
         this.visible7 = !this.visible7;
       }
     },
@@ -94,13 +91,12 @@ export default {
       if (this.visible7 == true) {
         this.visible7 = !this.visible7;
       }
-
     },
-     Hide2: function () {
+    Hide2: function () {
       if (this.visible8 == false) {
         this.visible8 = !this.visible8;
       }
-      window.location.reload()
+      window.location.reload();
     },
     Hideshow2: function () {
       if (this.visible8 == true) {
@@ -109,8 +105,13 @@ export default {
     },
     Archivehide: function () {
       this.visible9 = !this.visible9;
-    }
-  }
+    },
+  },
+  updated(){
+  
+  console.log('маунтиться dd');
+  console.log(this.visible7);
+}
 };
 </script> 
 

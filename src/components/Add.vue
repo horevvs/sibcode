@@ -246,7 +246,10 @@
         if (this.visible8 == true) {
           this.visible8 = !this.visible8;
         }
-      }
+      },
+      mounted(){
+        console.log('mounted()');
+    }
     }
   };
   </script>
