@@ -1,8 +1,12 @@
 
 <template>
-  <div  v-show="visible8">
-    <div class="d-flex mt-2 mx-5 col-5  justify-content-between">
-      <div>Список Активных проектов</div>
+  <div  v-show="visible8"   >
+
+<div  v-show="visible9">
+
+
+    <div  class="d-flex mt-2 mx-5 col-5  justify-content-between">
+      <div >Список Активных проектов</div>
       <button
         v-on:click="visible6 = !visible6"
         type="button"
@@ -15,11 +19,11 @@
 
     <div class="mx-5 col-5" v-show="visible6">
       <div >
-        <div class="d-flex justify-content-around">
-        <router-link
+        <div   class="d-flex justify-content-around">
+        <router-link 
             to="/generateaReport"
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-            ><div class="text-dark">qwe</div></router-link
+            ><div     v-on:click="visible9 = !visible9"   class="text-dark">qwe</div></router-link
           >
           <router-link
             to="/changeproject"
@@ -56,7 +60,7 @@
 
 
 
-
+  </div>
 
       </div>
    
@@ -76,6 +80,8 @@ export default {
       visible5: false,
       visible6: false,
       visible7: true,
+      visible8: true,
+      visible9: true,
     };
   },
   methods: {
@@ -100,6 +106,9 @@ export default {
       if (this.visible8 == true) {
         this.visible8 = !this.visible8;
       }
+    },
+    Archivehide: function () {
+      this.visible9 = !this.visible9;
     }
   }
 };

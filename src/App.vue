@@ -1,3 +1,4 @@
+
 <template>
   <div>
     <div>
@@ -76,6 +77,7 @@ export default {
       visible5: false,
       visible6: false,
       visible7: true,
+      visible8: true,
     };
   },
   methods: {
