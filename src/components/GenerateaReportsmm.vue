@@ -58,80 +58,88 @@
     </div>
 
     <div class="table1 mt-5">
-            <table>
-                <tr>
-                    <td></td>
-                    <td >Охват</td>
-                    <td>Просмотры</td>
-                    <td>Лайки</td>
-                    <td>Комментарии</td>
-                    <td>Подписки</td>
-                    <td>Репосты</td>
-                </tr>
-                <tr>
-                    <td  class="bg-secondary">ВКонтакте</td>
-                    <td><input id="vk-Reichweite" value="" type="text"></td>
-                    <td><input id="vk-views" value="" type="text"></td>
-                    <td><input id="vk-like" value="" type="text"></td>
-                    <td><input id="vk-comments" value="" type="text"></td>
-                    <td><input id="vk-sub" value="" type="text"></td>
-                    <td><input id="vk-repost" value="" type="text"></td>
-                </tr>
-                <tr>
-                    <td class="bg-secondary">Яндекс.Дзен</td>
-                    <td><input id="ya-Reichweite" value="" type="text"></td>
-                    <td><input id="ya-views" value="" type="text"></td>
-                    <td><input id="ya-like" value="" type="text"></td>
-                    <td><input id="ya-comments" value="" type="text"></td>
-                    <td><input id="ya-sub" value="" type="text"></td>
-                    <td><input id="ya-repost" value="" type="text"></td>
-                </tr>
-                <tr>
-                    <td class="bg-secondary">Telegram</td>
-                    <td><input id="telegram-Reichweite" value="" type="text"></td>
-                    <td><input id="telegram-views" value="" type="text"></td>
-                    <td><input id="telegram-like" value="" type="text"></td>
-                    <td><input id="telegram-comments" value="" type="text"></td>
-                    <td><input id="telegram-sub" value="" type="text"></td>
-                    <td><input id="telegram-repost" value="" type="text"></td>`
-                </tr>
-                <tr>
-                    <td class="bg-secondary">Instagram</td>
-                    <td><input id="instagramm-Reichweite" value="" type="text"></td>
-                    <td><input id="instagramm-views" value="" type="text"></td>
-                    <td><input id="instagramm-like" value="" type="text"></td>
-                    <td><input id="instagramm-comments" value="" type="text"></td>
-                    <td><input id="instagramm-sub" value="" type="text"></td>
-                    <td><input id="instagramm-repost" value="" type="text"></td>`
-                </tr>
-            </table>
-            Таблица 1. Статистика социальных сетей   <div class="preloader hide">
-                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>                </div>
+      <table>
+        <tr>
+          <td></td>
+          <td>Охват</td>
+          <td>Просмотры</td>
+          <td>Лайки</td>
+          <td>Комментарии</td>
+          <td>Подписки</td>
+          <td>Репосты</td>
+        </tr>
+        <tr>
+          <td class="bg-secondary">ВКонтакте</td>
+          <td><input id="vk-Reichweite" value="" type="text" /></td>
+          <td><input id="vk-views" value="" type="text" /></td>
+          <td><input id="vk-like" value="" type="text" /></td>
+          <td><input id="vk-comments" value="" type="text" /></td>
+          <td><input id="vk-sub" value="" type="text" /></td>
+          <td><input id="vk-repost" value="" type="text" /></td>
+        </tr>
+        <tr>
+          <td class="bg-secondary">Яндекс.Дзен</td>
+          <td><input id="ya-Reichweite" value="" type="text" /></td>
+          <td><input id="ya-views" value="" type="text" /></td>
+          <td><input id="ya-like" value="" type="text" /></td>
+          <td><input id="ya-comments" value="" type="text" /></td>
+          <td><input id="ya-sub" value="" type="text" /></td>
+          <td><input id="ya-repost" value="" type="text" /></td>
+        </tr>
+        <tr>
+          <td class="bg-secondary">Telegram</td>
+          <td><input id="telegram-Reichweite" value="" type="text" /></td>
+          <td><input id="telegram-views" value="" type="text" /></td>
+          <td><input id="telegram-like" value="" type="text" /></td>
+          <td><input id="telegram-comments" value="" type="text" /></td>
+          <td><input id="telegram-sub" value="" type="text" /></td>
+          <td><input id="telegram-repost" value="" type="text" /></td>
+          `
+        </tr>
+        <tr>
+          <td class="bg-secondary">Instagram</td>
+          <td><input id="instagramm-Reichweite" value="" type="text" /></td>
+          <td><input id="instagramm-views" value="" type="text" /></td>
+          <td><input id="instagramm-like" value="" type="text" /></td>
+          <td><input id="instagramm-comments" value="" type="text" /></td>
+          <td><input id="instagramm-sub" value="" type="text" /></td>
+          <td><input id="instagramm-repost" value="" type="text" /></td>
+          `
+        </tr>
+      </table>
+      Таблица 1. Статистика социальных сетей
+      <div class="preloader hide">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-    
+      </div>
+    </div>
 
-   
-        <div class="details_page-body-project_manager mt-5">
-            <div class="text">Проектный менеджер</div>
-            <select>
-              
-                 
-            </select>
-        </div>
+    <div class="details_page-body-project_manager mt-5">
+      <div class="text">Проектный менеджер</div>
+      <select></select>
+    </div>
 
-        <button type="button" class="btn btn-secondary col-2 mt-5">
-          Сформировать PDF отчёт
-      </button>
+    <button type="button" class="btn btn-secondary col-2 mt-5">
+      Сформировать PDF отчёт
+    </button>
 
-
-  
-
-        <div style="width: 300px; margin-top: 30px; padding: 10px 20px; cursor: pointer; border: 1px solid #000" class="details_page-body-delete_pdf">
-             Удалить отчёт <span style="display: none"></span> с сервера (Нажать только после создания)
-        </div>
-
-   
-
+    <div
+      style="
+        width: 300px;
+        margin-top: 30px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: 1px solid #000;
+      "
+      class="details_page-body-delete_pdf"
+    >
+      Удалить отчёт <span style="display: none"></span> с сервера (Нажать только
+      после создания)
+    </div>
   </div>
 </template>
 
