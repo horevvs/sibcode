@@ -3,7 +3,7 @@
   <div>
 
   
-    <!-- v-if="$route.path == '/' || $route.path == '/seo'|| $route.path == '/smm' || $route.path == '/target'  " -->
+ 
     <div v-if="$route.path !== '/generateaReportseo' && $route.path !== '/generateaReportsAvertisingt' 
     && $route.path !== '/generateaReportsmm' && $route.path !== '/generateaReporttarget' "  
     class="d-flex mt-2 mx-5 col-5 justify-content-between">
