@@ -101,7 +101,6 @@ export default {
       if (this.visible8 == false) {
         this.visible8 = !this.visible8;
       }
-      // window.location.reload()
     },
     Hideshow2: function () {
       if (this.visible8 == true) {

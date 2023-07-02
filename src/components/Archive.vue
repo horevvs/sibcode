@@ -1,9 +1,5 @@
-
 <template>
   <div>
-
-  
- 
     <div v-if="$route.path !== '/generateaReportseo' && $route.path !== '/generateaReportsAvertisingt' 
     && $route.path !== '/generateaReportsmm' && $route.path !== '/generateaReporttarget' "  
     class="d-flex mt-2 mx-5 col-5 justify-content-between">
@@ -17,7 +13,7 @@
       </button>
     </div>
 
-    <div v-if="$route.path !== '/generateaReportseo' && $route.path !== '/generateaReportsAvertisingt' 
+    <div  v-show="visible6" v-if="$route.path !== '/generateaReportseo' && $route.path !== '/generateaReportsAvertisingt' 
     && $route.path !== '/generateaReportsmm' && $route.path !== '/generateaReporttarget' " class="mx-5 col-5" >
       <div>
         <div class="d-flex justify-content-around">
@@ -103,17 +99,11 @@ export default {
       visible6: false,
       visible7: true,
       visible8: true,
-      visible9: true,
     };
   },
   methods: {
     Hide: function () {
       if (this.visible7 == false) {
-        this.visible7 = !this.visible7;
-      }
-    },
-    Hideshow: function () {
-      if (this.visible7 == true) {
         this.visible7 = !this.visible7;
       }
     },
@@ -128,13 +118,6 @@ export default {
         this.visible8 = !this.visible8;
       }
     },
-    Archivehide: function () {
-      this.visible9 = !this.visible9;
-    },
-  },
-  updated() {
-    console.log("маунтиться dd");
-    console.log(this.visible7);
   },
 };
 </script> 
