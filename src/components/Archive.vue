@@ -53,7 +53,7 @@
             <router-link
               to="/changeproject"
               class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-              ><div v-on:click="Hideshow2" class="text-dark">
+              ><div  class="text-dark">
                 Настройки
               </div></router-link
             >

@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <div>
+    <div v-if="$route.path !== '/add' && $route.path !== '/changeproject' ">
       <div class="d-flex rounded-circleflex-row mt-3 mx-3 mb-3">
         <div
           v-on:click="Hide2"
@@ -40,9 +40,9 @@
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-between mx-5">
+    <div  v-if="$route.path !== '/add'&& $route.path !== '/changeproject'" class="d-flex justify-content-between mx-5">
       <router-link to="/add">
-        <button  v-on:click="Hideshow"
+        <button 
           type="button"
           class="btn btns btn-secondary link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
           Добавить проект
@@ -57,7 +57,11 @@
     </div>
 
     <router-view />
-     <Archive v-show="visible7" /> 
+
+<div v-if="$route.path !== '/add' && $route.path !== '/manual'&& $route.path !== '/changeproject'  ">
+      <Archive v-show="visible7" /> 
+</div>
+
   </div>
 </template>
 
@@ -97,7 +101,7 @@ export default {
       if (this.visible8 == false) {
         this.visible8 = !this.visible8;
       }
-      window.location.reload()
+      // window.location.reload()
     },
     Hideshow2: function () {
       if (this.visible8 == true) {
