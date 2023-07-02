@@ -1,63 +1,88 @@
 
 <template>
-  <div v-show="visible8">
-    <div v-show="visible9">
-      <div class="d-flex mt-2 mx-5 col-5 justify-content-between">
-        <div>Список Активных проектов</div>
-        <button
-          v-on:click="visible6 = !visible6"
-          type="button"
-          class="btn btn-secondary btn-sm"
-        >
-          Архив
-        </button>
-      </div>
+  <div>
 
-      <div class="mx-5 col-5" v-show="visible6">
-        <div>
-          <div class="d-flex justify-content-around">
-            <router-link
-              to="/generateaReport"
-              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-              ><div v-on:click="visible9 = !visible9" class="text-dark">
-                qwe
-              </div></router-link
-            >
-            <router-link
-              to="/changeproject"
-              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-              ><div class="text-dark">(Из архива)</div></router-link
-            >
+  
+    <!-- v-if="$route.path == '/' || $route.path == '/seo'|| $route.path == '/smm' || $route.path == '/target'  " -->
+    <div v-if="$route.path !== '/generateaReportseo' && $route.path !== '/generateaReportsAvertisingt' 
+    && $route.path !== '/generateaReportsmm' && $route.path !== '/generateaReporttarget' "  
+    class="d-flex mt-2 mx-5 col-5 justify-content-between">
+      <div>Список Активных проектов</div>
+      <button
+        v-on:click="visible6 = !visible6"
+        type="button"
+        class="btn btn-secondary btn-sm"
+      >
+        Архив
+      </button>
+    </div>
 
-            <router-link
-              to="/changeproject"
-              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-              ><div v-on:click="Hideshow2" class="text-dark">
-                Настройки
-              </div></router-link
-            >
-          </div>
+    <div v-if="$route.path !== '/generateaReportseo' && $route.path !== '/generateaReportsAvertisingt' 
+    && $route.path !== '/generateaReportsmm' && $route.path !== '/generateaReporttarget' " class="mx-5 col-5" >
+      <div>
+        <div class="d-flex justify-content-around">
+          <router-link
+            to="/generateaReport"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">qwe</div>
+          </router-link>
 
-          <div class="d-flex justify-content-around">
-            <router-link
-              to="/generateaReport"
-              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-              ><div class="text-dark">test</div></router-link
-            >
-            <router-link
-              to="/add"
-              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-              ><div class="text-dark">(Из архива)</div></router-link
-            >
+          <router-link
+            to="/changeproject"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">(Из архива)</div></router-link
+          >
 
-            <router-link
-              to="/changeproject"
-              class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-              ><div  class="text-dark">
-                Настройки
-              </div></router-link
-            >
-          </div>
+          <router-link
+            to="/changeproject"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div v-on:click="Hideshow2" class="text-dark">
+              Настройки
+            </div></router-link
+          >
+        </div>
+
+        <div class="d-flex justify-content-around">
+          <router-link
+     
+            v-if="$route.path == '/'"
+            to="/generateaReportsAvertisingt"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">tests</div></router-link
+          >
+
+          <router-link
+            v-if="$route.path == '/seo'"
+            to="/generateaReportseo"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">seos</div></router-link
+          >
+
+          <router-link
+            v-if="$route.path == '/smm'"
+            to="/generateaReportsmm"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">smm</div></router-link
+          >
+
+          <router-link
+            v-if="$route.path == '/target'"
+            to="/generateaReporttarget"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">target</div></router-link
+          >
+
+          <router-link
+            to="/add"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">(Из архива)</div></router-link
+          >
+
+          <router-link
+            to="/changeproject"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            ><div class="text-dark">Настройки</div></router-link
+          >
         </div>
       </div>
     </div>
@@ -107,11 +132,10 @@ export default {
       this.visible9 = !this.visible9;
     },
   },
-  updated(){
-  
-  console.log('маунтиться dd');
-  console.log(this.visible7);
-}
+  updated() {
+    console.log("маунтиться dd");
+    console.log(this.visible7);
+  },
 };
 </script> 
 

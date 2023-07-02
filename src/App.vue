@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div  v-if="$route.path !== '/add'&& $route.path !== '/changeproject'" class="d-flex justify-content-between mx-5">
+    <div  v-if="$route.path !== '/add'&& $route.path !== '/changeproject' && $route.path == '/'  " class="d-flex justify-content-between mx-5">
       <router-link to="/add">
         <button 
           type="button"
@@ -59,7 +59,7 @@
     <router-view />
 
 <div v-if="$route.path !== '/add' && $route.path !== '/manual'&& $route.path !== '/changeproject'  ">
-      <Archive v-show="visible7" /> 
+      <Archive  /> 
 </div>
 
   </div>

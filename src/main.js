@@ -19,7 +19,13 @@ import Add from "@/components/Add";
 import Manual from "@/components/Manual";
 import Archive from "@/components/Archive";
 import Changeproject from "@/components/Changeproject";
-import GenerateaReport from "@/components/GenerateaReport";
+import GenerateaReportseo from "@/components/GenerateaReportseo";
+import GenerateaReportsmm from "@/components/GenerateaReportsmm";
+import GenerateaReporttarget from "@/components/GenerateaReporttarget";
+import GenerateaReportsAvertising from "@/components/GenerateaReportsAvertising";
+
+
+
 
 Vue.use(VueRouter);
 Vue.use(BootstrapVue)
@@ -60,10 +66,23 @@ const routes = [
     component: Changeproject,
   },
   {
-    path: "/generateaReport",
-    component: GenerateaReport,
+    path: "/generateaReportseo",
+    component: GenerateaReportseo,
+  },
+  {
+    path: "/generateaReportsmm",
+    component: GenerateaReportsmm,
+  },
+  {
+    path: "/generateaReporttarget",
+    component: GenerateaReporttarget,
+  },
+  {
+    path: "/generateaReportsAvertisingt",
+    component: GenerateaReportsAvertising,
   },
 ];
+
 
 
 Changeproject

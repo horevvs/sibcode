@@ -1,0 +1,9 @@
+<template>
+  <div>reklama </div>
+
+
+</template>
+
+<style>
+@import "../css/style.css";
+</style>
