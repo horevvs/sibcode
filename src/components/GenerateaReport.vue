@@ -23,7 +23,7 @@
 
     <div class="d-flex mt-3">
       <div class="mx-2">
-        <section>
+        <section id="mySection">
           <date-picker
             v-model="value2"
             value-type="format"
@@ -44,39 +44,44 @@
         </section>
       </div>
 
-      <button  v-on:click="Showreport" type="button" class="btn mx-5 bg-secondary-subtle">
+      <button
+        v-on:click="Showreport"
+        type="button"
+        class="btn mx-5 bg-secondary-subtle"
+      >
         Выбрать период
       </button>
     </div>
 
-    <div class="fs-5" v-show="hide"> Отчетный период за:  {{ value2 }} - {{ value3 }}</div>
+    <div class="fs-5 mx-2" v-show="hide">
+      Отчетный период за: {{ value2 }} - {{ value3 }}
+    </div>
 
-    <div class="form-check mt-3">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+    <div class="form-check mt-5">
+  <input class="form-check-input bg-secondary-subtle" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
     Показать динамику
   </label>
 </div>
-
-<div class="form-check mt-2">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label " for="flexCheckDefault">
-    Показать результат по группе запросов 
+<div class="form-check">
+  <input class="form-check-input bg-secondary-subtle" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Показать результат по группе запросов
   </label>
+
+  
+
 </div>
 
 
-
-
-
-
-
+   
 
   </div>
-
-
 </template>
+
+<style>
+@import "../css/style.css";
+</style>
 
 
 <script>
@@ -95,10 +100,10 @@ export default {
       visible5: false,
       visible6: false,
       visible7: true,
-      value1: [new Date(2019, 9, 8), new Date(2019, 9, 19)],
-      value2: "",
-      value3: "",
+      value2: null,
+      value3: null,
       hide: false,
+      checked: true,
     };
   },
   methods: {
@@ -124,8 +129,13 @@ export default {
       }
     },
     Showreport: function () {
-      if (this.hide !== true  ) {
+      if (
+        this.value2 !== null &&
+        this.value3 !== null &&
+        this.checked == true
+      ) {
         this.hide = !this.hide;
+        this.checked = !this.checked;
       }
     },
   },
