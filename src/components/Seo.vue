@@ -1,6 +1,9 @@
 <template>
+  <div  class="hello">
 
-    <div  v-if="$route.path !== '/add'&& $route.path !== '/changeproject' && $route.path == '/'  " class="d-flex justify-content-between mx-5">
+
+    <div>
+  <div  v-if="$route.path !== '/add'&& $route.path !== '/changeproject' && $route.path !== '/'  " class="d-flex justify-content-between mx-5">
       <router-link to="/add">
         <button 
           type="button"
@@ -15,6 +18,10 @@
           Выход</a>
       </button>
     </div>
+  </div>
 
+  </div>
 </template>
+
+
 
