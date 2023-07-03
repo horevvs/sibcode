@@ -1,6 +1,6 @@
 <template>
 
-    <div  v-if="$route.path !== '/add'&& $route.path !== '/changeproject' && $route.path !== '/'  " class="d-flex justify-content-between mx-5">
+    <div  v-if="$route.path !== '/add'&& $route.path !== '/changeproject' && $route.path == '/'  " class="d-flex justify-content-between mx-5">
       <router-link to="/add">
         <button 
           type="button"
@@ -16,21 +16,5 @@
       </button>
     </div>
 
-    
-
- 
 </template>
-
-
-
-<!-- <script>
-import UnderHeader from "./UnderHeader.vue";
-
-export default {
- name: "App",
- components: {
-   UnderHeader,
- },
-};
-</script>  -->
 

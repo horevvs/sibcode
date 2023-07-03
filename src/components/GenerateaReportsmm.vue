@@ -120,23 +120,17 @@
 
     <div class="details_page-body-project_manager mt-5">
       <div class="text">Проектный менеджер</div>
-      <select></select>
+      <select>
+        <option value="">1</option>
+        <option value="">2</option>
+      </select>
     </div>
 
     <button type="button" class="btn btn-secondary col-2 mt-5">
       Сформировать PDF отчёт
     </button>
 
-    <div
-      style="
-        width: 300px;
-        margin-top: 30px;
-        padding: 10px 20px;
-        cursor: pointer;
-        border: 1px solid #000;
-      "
-      class="details_page-body-delete_pdf"
-    >
+    <div class="details_page-body-delete_pdf createreport">
       Удалить отчёт <span style="display: none"></span> с сервера (Нажать только
       после создания)
     </div>

@@ -44,14 +44,14 @@
             v-if="$route.path == '/'"
             to="/generateaReportsAvertisingt"
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-            ><div class="text-dark">tests</div></router-link
+            ><div class="text-dark">test</div></router-link
           >
 
           <router-link
             v-if="$route.path == '/seo'"
             to="/generateaReportseo"
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-            ><div class="text-dark">seos</div></router-link
+            ><div class="text-dark">seo</div></router-link
           >
 
           <router-link

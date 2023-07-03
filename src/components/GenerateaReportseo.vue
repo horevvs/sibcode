@@ -58,24 +58,45 @@
     </div>
 
     <div class="form-check mt-5">
-  <input class="form-check-input bg-secondary-subtle" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-    Показать динамику
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input bg-secondary-subtle" type="checkbox" value="" id="flexCheckChecked" checked>
-  <label class="form-check-label" for="flexCheckChecked">
-    Показать результат по группе запросов
-  </label>
+      <input
+        class="form-check-input bg-secondary-subtle"
+        type="checkbox"
+        value=""
+        id="flexCheckDefault"
+      />
+      <label class="form-check-label" for="flexCheckDefault">
+        Показать динамику
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input bg-secondary-subtle"
+        type="checkbox"
+        value=""
+        id="flexCheckChecked"
+        checked
+      />
+      <label class="form-check-label" for="flexCheckChecked">
+        Показать результат по группе запросов
+      </label>
+    </div>
 
-  
+    <div class="details_page-body-project_manager mt-5">
+      <div class="text">Проектный менеджер</div>
+      <select></select>
+    </div>
 
-</div>
+    <button type="button" class="btn btn-secondary col-2 mt-5">
+      Сформировать PDF отчёт
+    </button>
 
-
-   
-
+    <div
+      
+      class="details_page-body-delete_pdf createreport"
+    >
+      Удалить отчёт <span style="display: none"></span> с сервера (Нажать только
+      после создания)
+    </div>
   </div>
 </template>
 
