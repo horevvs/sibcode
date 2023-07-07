@@ -16,7 +16,7 @@
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
 
 
-            <div class="text-light">Seo
+            <div class="text-light cursor">Seo
 
 
             </div>
