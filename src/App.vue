@@ -1,54 +1,54 @@
 
 <template>
   <div>
-    <div v-if="$route.path !== '/add' && $route.path !== '/changeproject' ">
+    <div v-if="$route.path !== '/add' && $route.path !== '/changeproject'">
       <div class="d-flex rounded-circleflex-row mt-3 mx-3 mb-3">
-        <div
-          v-on:click="Hide2"
-          class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
-          <router-link
-            to="/"
+        <div @:click="Hide2" class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
+          <router-link to="/" exact active-class="has" tag="div"
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-            <div  class="text-light">Контекстная реклама</div></router-link>
+
+            <div class="text-light">Контекстная реклама</div>
+          </router-link>
         </div>
 
-        <div
-        @click="Hide2"
-          class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
-          <router-link
-            to="/seo"
-            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"> 
-            <div class="text-light">Seo</div></router-link>
+        <div @click="Hide2" class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
+          <router-link to="/seo" active-class="has" tag="div"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+
+
+            <div class="text-light">Seo
+
+
+            </div>
+          </router-link>
         </div>
 
-        <div
-        @click="Hide2"
-          class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
-          <router-link
-            to="/smm"
+        <div @click="Hide2" class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
+          <router-link to="/smm" active-class="has" tag="div"
             class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+
+
             <div>Smm</div>
           </router-link>
         </div>
 
-        <div
-        @click="Hide2" class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
-          <router-link
-            to="/target"
-            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"> 
-            <div class="text-light">Target</div></router-link>
+        <div @click="Hide2" class="m-3 p-2 w-25 rounded text-center bg-secondary fs-5">
+          <router-link to="/target" active-class="has" tag="div"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+            <div class="text-light">Target</div>
+          </router-link>
         </div>
       </div>
     </div>
-    <div  v-if="$route.path !== '/add'&& $route.path !== '/changeproject' && $route.path == '/'  " class="d-flex justify-content-between mx-5">
+    <div v-if="$route.path !== '/add' && $route.path !== '/changeproject' && $route.path == '/'"
+      class="d-flex justify-content-between mx-5">
       <router-link to="/add">
-        <button 
-          type="button"
+        <button type="button"
           class="btn btns btn-secondary link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
           Добавить проект
         </button>
       </router-link>
-     
+
       <button type="button" class="btn btn-secondary">
         <a href="https://report-dev.uat.sibcode.team/login"
           class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
@@ -58,13 +58,16 @@
 
     <router-view />
 
-<div v-if="$route.path !== '/add' && $route.path !== '/manual'&& $route.path !== '/changeproject'  ">
-      <Archive  /> 
-</div>
+    <div v-if="$route.path !== '/add' && $route.path !== '/manual' && $route.path !== '/changeproject'">
+      <Archive />
+    </div>
 
   </div>
 </template>
 
+<style>
+@import "./css/style.css";
+</style>
 
 <script>
 import Archive from "./components/Archive.vue";
@@ -83,11 +86,16 @@ export default {
       visible6: false,
       visible7: true,
       visible8: true,
+      isActive: true,
+      isActiveseo: true,
+      isActivesmm: true,
+      isActivetarget: true
     };
+
   },
   methods: {
     Hide: function () {
-      if (this.visible7 == false ) {
+      if (this.visible7 == false) {
         this.visible7 = !this.visible7;
       }
     },
@@ -97,7 +105,7 @@ export default {
       }
 
     },
-     Hide2: function () {
+    Hide2: function () {
       if (this.visible8 == false) {
         this.visible8 = !this.visible8;
       }
@@ -106,8 +114,16 @@ export default {
       if (this.visible8 == true) {
         this.visible8 = !this.visible8;
       }
-    }
+    },
+
+
+
+
   }
 };
+
+
+
+
 </script> 
 
