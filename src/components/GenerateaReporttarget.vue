@@ -89,6 +89,27 @@
       </select>
     </div>
 
+    <div>
+      <div class="mx-2 mt-5">
+        <p> <b> Что было сделано</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-2 mt-2">
+        <p> <b> Выводы</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-2 mt-2">
+        <p> <b> Что планируется сделать</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-2 mt-2">
+        <p> <b> Дополнительно</b> </p>
+        <textarea> </textarea>
+      </div>
+    </div>
+
+    
+
     <button type="button" class="btn btn-secondary col-2 mt-5">
       Сформировать PDF отчёт
     </button>

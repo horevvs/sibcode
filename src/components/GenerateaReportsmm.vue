@@ -117,6 +117,25 @@
         </div>
       </div>
     </div>
+    <div>
+      <div class="mx-2 mt-5">
+        <p> <b> Сравнение с предыдущим месяцем</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-2 mt-2">
+        <p> <b> План постов на следующий месяц</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-2 mt-2">
+        <p> <b> Что планируется сделать</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-2 mt-2">
+        <p> <b> Выводы</b> </p>
+        <textarea> </textarea>
+      </div>
+    </div>
+    
 
     <div class="details_page-body-project_manager mt-5">
       <div class="text">Проектный менеджер</div>

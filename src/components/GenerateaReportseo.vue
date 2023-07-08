@@ -81,6 +81,22 @@
       </label>
     </div>
 
+
+    <div>
+      <div class="mx-2 mt-5">
+        <p> <b> Что было сделано</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-2 mt-2">
+        <p> <b> Выводы</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-2 mt-2">
+        <p> <b> ЧТо планируется сделать</b> </p>
+        <textarea> </textarea>
+      </div>
+    </div>
+
     <div class="details_page-body-project_manager mt-5">
       <div class="text">Проектный менеджер</div>
       <select></select>
