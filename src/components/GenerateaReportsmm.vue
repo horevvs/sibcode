@@ -120,19 +120,19 @@
     <div>
       <div class="mx-2 mt-5">
         <p> <b> Сравнение с предыдущим месяцем</b> </p>
-        <textarea> </textarea>
+        <tinymce id="d1" v-model="data"></tinymce>
       </div>
       <div class="mx-2 mt-2">
         <p> <b> План постов на следующий месяц</b> </p>
-        <textarea> </textarea>
+        <tinymce id="d2" v-model="data2"></tinymce>
       </div>
       <div class="mx-2 mt-2">
         <p> <b> Что планируется сделать</b> </p>
-        <textarea> </textarea>
+        <tinymce id="d3" v-model="data3"></tinymce>
       </div>
       <div class="mx-2 mt-2">
         <p> <b> Выводы</b> </p>
-        <textarea> </textarea>
+        <tinymce id="d4" v-model="data4"></tinymce>
       </div>
     </div>
     

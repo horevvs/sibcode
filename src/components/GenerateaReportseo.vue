@@ -85,15 +85,15 @@
     <div>
       <div class="mx-2 mt-5">
         <p> <b> Что было сделано</b> </p>
-        <textarea> </textarea>
+        <tinymce id="d1" v-model="data"></tinymce>
       </div>
       <div class="mx-2 mt-2">
         <p> <b> Выводы</b> </p>
-        <textarea> </textarea>
+        <tinymce id="d3" v-model="data2"></tinymce>
       </div>
       <div class="mx-2 mt-2">
-        <p> <b> ЧТо планируется сделать</b> </p>
-        <textarea> </textarea>
+        <p> <b> Что планируется сделать</b> </p>
+        <tinymce id="d4" v-model="data4"></tinymce>
       </div>
     </div>
 

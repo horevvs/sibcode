@@ -89,26 +89,28 @@
       </select>
     </div>
 
+    <p>добавить остальное из ссш   </p>
+
     <div>
       <div class="mx-2 mt-5">
-        <p> <b> Что было сделано</b> </p>
-        <textarea> </textarea>
+        <p> <b>Что было сделано</b> </p>
+        <tinymce id="d1" v-model="data"></tinymce>
       </div>
       <div class="mx-2 mt-2">
-        <p> <b> Выводы</b> </p>
-        <textarea> </textarea>
+        <p> <b>Выводы</b> </p>
+        <tinymce id="d2" v-model="data2"></tinymce>
       </div>
       <div class="mx-2 mt-2">
         <p> <b> Что планируется сделать</b> </p>
-        <textarea> </textarea>
+        <tinymce id="d3" v-model="data3"></tinymce>
       </div>
       <div class="mx-2 mt-2">
-        <p> <b> Дополнительно</b> </p>
-        <textarea> </textarea>
+        <p> <b>Дополнительно</b> </p>
+        <tinymce id="d4" v-model="data4"></tinymce>
       </div>
     </div>
 
-    
+
 
     <button type="button" class="btn btn-secondary col-2 mt-5">
       Сформировать PDF отчёт

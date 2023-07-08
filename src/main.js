@@ -17,6 +17,8 @@ import GenerateaReporttarget from "@/components/GenerateaReporttarget";
 import GenerateaReportsAvertising from "@/components/GenerateaReportsAvertising";
 
 
+import tinymce from 'vue-tinymce-editor'
+Vue.component('tinymce', tinymce)
 
 
 Vue.use(VueRouter);
