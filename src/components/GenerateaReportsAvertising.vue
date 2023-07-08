@@ -105,6 +105,10 @@
       после создания)
     </div>
 
+    <h1>TinyMCE Quick Start Guide</h1>
+    <form method="post">
+      <textarea id="mytextarea">Hello, World!</textarea>
+    </form>
 
 
 
@@ -117,6 +121,12 @@
 @import "../css/style.css";
 </style>
 
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+      tinymce.init({
+        selector: '#mytextarea'
+      });
+    </script>
 
 <script>
 import DatePicker from "vue2-datepicker";
