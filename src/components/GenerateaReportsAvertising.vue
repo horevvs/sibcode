@@ -28,12 +28,12 @@
         </section>
       </div>
 
-      <button v-on:click="Showreport" type="button" class="btn mx-5 bg-secondary-subtle">
+      <button @click="Showreport" type="button" class="btn mx-5 bg-secondary-subtle">
         Выбрать период
       </button>
     </div>
 
-    <div class="fs-5 mx-2" v-show="hide">
+    <div class="fs-5 mx-5 mt-2 " v-show="hide">
       Отчетный период за: {{ value2 }} - {{ value3 }}
     </div>
 
@@ -70,16 +70,11 @@
 
     <div>
       <div class="text text_head mt-5 mx-5">Конверсии</div>
-
       <div class="preloader hide">
-        <div class="lds-ellipsis">
-     
-        </div>
+        <div class="lds-ellipsis"> </div>
       </div>
       <label for="Callibri" class="text mx-5">Звонки (Callibri)</label>
       <input name="Callibri" type="text" class="col-1" value="0">
-
-
     </div>
 
 
@@ -88,11 +83,11 @@
 
 
     <div class="text text_head mx-5 mt-5">Свои цели</div>
-    <div class="task1 mx-5 mt-1">
-      <input class="task_name" type="text" placeholder="type task">
-      <input class="task_count mx-3 col-1" type="text" value="">
+    <div class="task1 mx-5 mt-1" id="target">
+      <input class="task_name" id='res' type="text" placeholder="type task">
+      <input class="task_count  mx-3 col-1" id='res2' type="text" value="">
     </div>
-    <button type="button" class="btn  mx-5 mt-3 btn-outline-secondary">Add task</button>
+    <button @click="Addtask" type="button" class="btn  mx-5 mt-3 btn-outline-secondary">Add task</button>
 
 
     <div class="details_page-body-project_manager mx-5 mt-5">
@@ -109,12 +104,19 @@
       Удалить отчёт <span style="display: none"></span> с сервера (Нажать только
       после создания)
     </div>
+
+
+
+
+
+
   </div>
 </template>
 
 <style>
 @import "../css/style.css";
 </style>
+
 
 <script>
 import DatePicker from "vue2-datepicker";
@@ -136,6 +138,7 @@ export default {
       value3: null,
       hide: false,
       checked: true,
+      result: null 
     };
   },
   methods: {
@@ -170,6 +173,13 @@ export default {
         this.checked = !this.checked;
       }
     },
-  },
+    Addtask: function () {
+      this.result = document.getElementById('res').value;
+      alert(this.result)
+      let target = document.querySelector('#target');
+      target.insertAdjacentHTML('beforeEnd',
+      '<div class="task1  mt-1"> <input class="task_name"  type="text" placeholder= > <input class="task_count  mx-3 col-1"  type="text" value=""> </div>');}
+  }
+  ,
 };
 </script> 
