@@ -37,8 +37,6 @@
       Отчетный период за: {{ value2 }} - {{ value3 }}
     </div>
 
-
-
     <div class="table1 mx-5 mt-5">
       <table>
         <tr>
@@ -77,11 +75,6 @@
       <input name="Callibri" type="text" class="col-1" value="0">
     </div>
 
-
-
-
-
-
     <div class="text text_head mx-5 mt-5">Свои цели</div>
     <div class="task1 mx-5 mt-1" id="target">
       <input class="task_name" id='res' type="text" placeholder="type task">
@@ -89,12 +82,25 @@
     </div>
     <button @click="Addtask" type="button" class="btn  mx-5 mt-3 btn-outline-secondary">Add task</button>
 
+    <div>
+      <div class="mx-5 mt-5">
+        <p> <b> Что было сделано</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-5 mt-2">
+        <p> <b> Выводы</b> </p>
+        <textarea> </textarea>
+      </div>
+      <div class="mx-5 mt-2">
+        <p> <b> ЧТо планируется сделать</b> </p>
+        <textarea> </textarea>
+      </div>
+    </div>
 
     <div class="details_page-body-project_manager mx-5 mt-5">
       <div class="text">Проектный менеджер</div>
       <select></select>
     </div>
-
 
     <button type="button" class="btn btn-secondary mx-5 col-2 mt-5">
       Сформировать PDF отчёт
@@ -105,10 +111,6 @@
       после создания)
     </div>
 
-    <h1>TinyMCE Quick Start Guide</h1>
-    <form method="post">
-      <textarea id="mytextarea">Hello, World!</textarea>
-    </form>
 
 
 
@@ -117,16 +119,14 @@
   </div>
 </template>
 
+
+
+
 <style>
 @import "../css/style.css";
 </style>
 
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-<script>
-      tinymce.init({
-        selector: '#mytextarea'
-      });
-    </script>
+Ы
 
 <script>
 import DatePicker from "vue2-datepicker";
@@ -148,7 +148,7 @@ export default {
       value3: null,
       hide: false,
       checked: true,
-      result: null 
+      result: null
     };
   },
   methods: {
@@ -185,10 +185,10 @@ export default {
     },
     Addtask: function () {
       this.result = document.getElementById('res').value;
-      alert(this.result)
       let target = document.querySelector('#target');
       target.insertAdjacentHTML('beforeEnd',
-      '<div class="task1  mt-1"> <input class="task_name"  type="text" placeholder= > <input class="task_count  mx-3 col-1"  type="text" value=""> </div>');}
+        '<div class="task1  mt-1"> <input class="task_name"  type="text" placeholder= > <input class="task_count  mx-3 col-1"  type="text" value=""> </div>');
+    }
   }
   ,
 };
