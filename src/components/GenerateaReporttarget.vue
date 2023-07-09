@@ -81,15 +81,35 @@
       </label>
     </div>
 
-    <div class="details_page-body-project_manager mt-5">
-      <div class="text">Проектный менеджер</div>
-      <select>
-        <option value="">1</option>
-        <option value="">2</option>
-      </select>
-    </div>
 
-    <p>добавить остальное из ссш   </p>
+
+    <div class="table1">
+            <table>
+                <tr>
+                    <th>Система</th>
+                    <th>Потрачено</th>
+                    <th>Показы</th>
+                    <th>Переходы</th>
+                    <th>CTR</th>
+                    <th>eCPC</th>
+                </tr>
+                <tr id="vk_tr">
+                    <td>ВК</td>
+                    <td><input id="vk-spent" class="vk_td" value="0" type="text"></td>
+                    <td><input id="vk-impressions" class="vk_td" value="0" type="text"></td>
+                    <td><input id="vk-clicks" class="vk_td" value="0" type="text"></td>
+                    <td><input id="vk-CTR" class="vk_td" value="0" type="text"></td>
+                    <td><input id="vk-eCPC" class="vk_td" value="0" type="text"></td>
+                </tr>
+            </table>
+            Таблица 1 -результаты рекламы в вк   <div class="preloader hide">
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>                </div>
+        </div>
+
+
+
+
+        
 
     <div>
       <div class="mx-2 mt-5">
@@ -110,7 +130,13 @@
       </div>
     </div>
 
-
+    <div class="details_page-body-project_manager mt-5">
+      <div class="text">Проектный менеджер</div>
+      <select>
+        <option value="">1</option>
+        <option value="">2</option>
+      </select>
+    </div>
 
     <button type="button" class="btn btn-secondary col-2 mt-5">
       Сформировать PDF отчёт
