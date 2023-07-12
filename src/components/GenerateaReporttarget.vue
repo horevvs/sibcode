@@ -10,17 +10,12 @@
       </button>
 
       <button type="button" class="btn bg-secondary-subtle">
-        <a
-          href="https://report-dev.uat.sibcode.team/login"
-          class="link-light text-body-emphasis link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-        >
-          Выход</a
-        >
+        <a href="https://report-dev.uat.sibcode.team/login" class="link-light text-body-emphasis link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+          Выход </a>
       </button>
     </div>
 
     <div class="text-center">Формирование отчёта</div>
-
     <div class="d-flex mt-3">
       <div class="mx-2">
         <section id="mySection">
@@ -47,8 +42,7 @@
       <button
         v-on:click="Showreport"
         type="button"
-        class="btn mx-5 bg-secondary-subtle"
-      >
+        class="btn mx-5 bg-secondary-subtle">
         Выбрать период
       </button>
     </div>
@@ -59,23 +53,21 @@
 
     <div class="form-check mt-5">
       <input
-        class="form-check-input bg-secondary-subtle"
+        class="form-check-input bg-secondary"
         type="checkbox"
         value=""
-        id="flexCheckDefault"
-      />
+        id="flexCheckDefault" />
       <label class="form-check-label" for="flexCheckDefault">
         Получить данные из ВК
       </label>
     </div>
     <div class="form-check">
       <input
-        class="form-check-input bg-secondary-subtle"
+        class="form-check-input bg-secondary"
         type="checkbox"
         value=""
         id="flexCheckChecked"
-        checked
-      />
+        checked/>
       <label class="form-check-label" for="flexCheckChecked">
         Получить данные из ВК(метрика)
       </label>
@@ -103,14 +95,8 @@
                 </tr>
             </table>
             Таблица 1 -результаты рекламы в вк   <div class="preloader hide">
-                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>                </div>
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> </div>
         </div>
-
-
-
-
-        
-
     <div>
       <div class="mx-2 mt-5">
         <p> <b>Что было сделано</b> </p>
@@ -149,10 +135,9 @@
   </div>
 </template>
 
-<style>
+<!-- <style>
 @import "../css/style.css";
-</style>
-
+</style> -->
 
 <script>
 import DatePicker from "vue2-datepicker";
