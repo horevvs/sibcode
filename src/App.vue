@@ -32,27 +32,18 @@
         </div>
       </div>
     </div>
-    <div v-if="$route.path !== '/add' && $route.path !== '/changeproject' && $route.path == '/'"
-      class="d-flex justify-content-between mx-5">
-      <router-link to="/add">
-        <button type="button"
-          class="btn btns btn-secondary link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-          Добавить проект
-        </button>
-      </router-link>
 
-      <button type="button" class="btn btn-secondary">
-        <a href="https://report-dev.uat.sibcode.team/login"
-          class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-          Выход</a>
-      </button>
-    </div>
+
+
+
+
+    <AddExitheader />
 
     <router-view />
 
-    <div v-if="$route.path !== '/add' && $route.path !== '/manual' && $route.path !== '/changeproject'">
-      <Archive />
-    </div>
+   
+      <Archive v-if="$route.path !== '/add' && $route.path !== '/manual' && $route.path !== '/changeproject'" />
+   
 
   </div>
 </template>
@@ -63,10 +54,13 @@
 
 <script>
 import Archive from "./components/Archive.vue";
+import AddExitheader from "./components/AddExitheader.vue";
+
 export default {
   name: "App",
   components: {
     Archive,
+    AddExitheader,
   },
   data() {
     return {
