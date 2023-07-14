@@ -1,4 +1,4 @@
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Vue from "vue";
@@ -22,8 +22,8 @@ Vue.component('tinymce', tinymce)
 
 
 Vue.use(VueRouter);
-Vue.use(BootstrapVue)
-Vue.use(IconsPlugin)
+// Vue.use(BootstrapVue)
+// Vue.use(IconsPlugin)
 
 const routes = [
 
@@ -74,8 +74,6 @@ const routes = [
 ];
 
 
-
-Changeproject
 const router = new VueRouter({
   routes,
   mode: "history",
