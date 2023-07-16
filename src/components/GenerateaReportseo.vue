@@ -2,7 +2,6 @@
   <div class="d-flex flex-column mt-5 mx-5">
     <div class="d-flex justify-content-between">
       <button
-        @click="Hideshow"
         type="button"
         class="btn btns bg-secondary-subtle link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
       >
@@ -74,7 +73,7 @@
         type="checkbox"
         value=""
         id="flexCheckChecked"
-        checked
+      
       />
       <label class="form-check-label" for="flexCheckChecked">
         Показать результат по группе запросов
@@ -132,7 +131,6 @@ export default {
   components: { DatePicker },
   data() {
     return {
-      
       value2: null,
       value3: null,
       hide: false,
@@ -140,17 +138,6 @@ export default {
     };
   },
   methods: {
-    Hide: function () {
-      if (this.visible7 == false) {
-        this.visible7 = !this.visible7;
-      }
-    },
-    Hideshow: function () {
-      if (this.visible7 == true) {
-        this.visible7 = !this.visible7;
-      }
-    },
-   
     Showreport: function () {
       if (
         this.value2 !== null &&

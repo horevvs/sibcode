@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex justify-content-between mx-5">
-      <button @click="Hideshow" type="button"
+      <button  type="button"
         class="btn btns bg-secondary-subtle link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
         <a class="text-body-emphasis" href="/">Назад</a>
       </button>
@@ -104,12 +104,6 @@
   </div>
 </template>
 
-
-<style>
-@import "../css/style.css";
-</style>
-
-
 <script>
 import DatePicker from "vue2-datepicker";
 import "vue2-datepicker/index.css";
@@ -126,17 +120,6 @@ export default {
     };
   },
   methods: {
-    Hide: function () {
-      if (this.visible7 == false) {
-        this.visible7 = !this.visible7;
-      }
-    },
-    Hideshow: function () {
-      if (this.visible7 == true) {
-        this.visible7 = !this.visible7;
-      }
-    },
-
     Showreport: function () {
       if (
         this.value2 !== null &&
@@ -154,6 +137,5 @@ export default {
         '<div class="task1  mt-1"> <input class="task_name"  type="text" placeholder= > <input class="task_count  mx-3 col-1"  type="text" value=""> </div>');
     }
   }
-  ,
 };
 </script> 

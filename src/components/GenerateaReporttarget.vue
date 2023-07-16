@@ -2,7 +2,7 @@
   <div class="d-flex flex-column mt-5 mx-5">
     <div class="d-flex justify-content-between">
       <button
-        v-on:click="Hideshow"
+      
         type="button"
         class="btn btns bg-secondary-subtle link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
       >
@@ -40,7 +40,7 @@
       </div>
 
       <button
-        @dblclick="Showreport"
+        @click="Showreport"
         type="button"
         class="btn mx-5 bg-secondary-subtle">
         Выбрать период
@@ -67,7 +67,7 @@
         type="checkbox"
         value=""
         id="flexCheckChecked"
-        checked/>
+       />
       <label class="form-check-label" for="flexCheckChecked">
         Получить данные из ВК(метрика)
       </label>
@@ -151,16 +151,8 @@ export default {
     };
   },
   methods: {
-    Hide: function () {
-      if (this.visible7 == false) {
-        this.visible7 = !this.visible7;
-      }
-    },
-    Hideshow: function () {
-      if (this.visible7 == true) {
-        this.visible7 = !this.visible7;
-      }
-    },
+
+    
     Showreport: function () {
       if (
         this.value2 !== null &&
