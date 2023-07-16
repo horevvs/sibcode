@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex justify-content-between mx-5">
-      <button v-on:click="Hideshow" type="button"
+      <button @click="Hideshow" type="button"
         class="btn btns bg-secondary-subtle link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
         <a class="text-body-emphasis" href="/">Назад</a>
       </button>
@@ -90,7 +90,9 @@
     </div>
     <div class="details_page-body-project_manager mx-5 mt-5">
       <div class="text">Проектный менеджер</div>
-      <select></select>
+      <select>
+        <option value="">ФИО проектного менеджера</option>
+      </select>
     </div>
     <button type="button" class="btn btn-secondary mx-5 col-2 mt-5">
       Сформировать PDF отчёт
@@ -116,13 +118,6 @@ export default {
   components: { DatePicker },
   data() {
     return {
-      visible: false,
-      visible2: false,
-      visible3: false,
-      visible4: false,
-      visible5: false,
-      visible6: false,
-      visible7: true,
       value2: null,
       value3: null,
       hide: false,
@@ -141,17 +136,7 @@ export default {
         this.visible7 = !this.visible7;
       }
     },
-    Hide2: function () {
-      if (this.visible8 == false) {
-        this.visible8 = !this.visible8;
-      }
-      window.location.reload();
-    },
-    Hideshow2: function () {
-      if (this.visible8 == true) {
-        this.visible8 = !this.visible8;
-      }
-    },
+
     Showreport: function () {
       if (
         this.value2 !== null &&

@@ -1,4 +1,4 @@
-// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Vue from "vue";
@@ -15,7 +15,6 @@ import GenerateaReportseo from "@/components/GenerateaReportseo";
 import GenerateaReportsmm from "@/components/GenerateaReportsmm";
 import GenerateaReporttarget from "@/components/GenerateaReporttarget";
 import GenerateaReportsAvertising from "@/components/GenerateaReportsAvertising";
-
 
 import tinymce from 'vue-tinymce-editor'
 Vue.component('tinymce', tinymce)

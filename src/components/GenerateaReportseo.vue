@@ -2,7 +2,7 @@
   <div class="d-flex flex-column mt-5 mx-5">
     <div class="d-flex justify-content-between">
       <button
-        v-on:click="Hideshow"
+        @click="Hideshow"
         type="button"
         class="btn btns bg-secondary-subtle link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
       >
@@ -59,7 +59,7 @@
 
     <div class="form-check mt-5">
       <input
-        class="form-check-input bg-secondary-subtle"
+        class="form-check-input bg-secondary"
         type="checkbox"
         value=""
         id="flexCheckDefault"
@@ -70,7 +70,7 @@
     </div>
     <div class="form-check">
       <input
-        class="form-check-input bg-secondary-subtle"
+        class="form-check-input bg-secondary"
         type="checkbox"
         value=""
         id="flexCheckChecked"
@@ -99,7 +99,9 @@
 
     <div class="details_page-body-project_manager mt-5">
       <div class="text">Проектный менеджер</div>
-      <select></select>
+    <select>
+        <option value="">ФИО проектного менеджера</option>
+      </select>
     </div>
 
     <button type="button" class="btn btn-secondary col-2 mt-5">
@@ -130,13 +132,7 @@ export default {
   components: { DatePicker },
   data() {
     return {
-      visible: false,
-      visible2: false,
-      visible3: false,
-      visible4: false,
-      visible5: false,
-      visible6: false,
-      visible7: true,
+      
       value2: null,
       value3: null,
       hide: false,
@@ -154,17 +150,7 @@ export default {
         this.visible7 = !this.visible7;
       }
     },
-    Hide2: function () {
-      if (this.visible8 == false) {
-        this.visible8 = !this.visible8;
-      }
-      window.location.reload();
-    },
-    Hideshow2: function () {
-      if (this.visible8 == true) {
-        this.visible8 = !this.visible8;
-      }
-    },
+   
     Showreport: function () {
       if (
         this.value2 !== null &&

@@ -1,21 +1,15 @@
 <template>
   <div class="d-flex flex-column mt-5 mx-5">
     <div class="d-flex justify-content-between">
-      <button
-        v-on:click="Hideshow"
-        type="button"
-        class="btn btns bg-secondary-subtle link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-      >
+      <button @click="Hideshow" type="button"
+        class="btn btns bg-secondary-subtle link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
         <a class="text-body-emphasis" href="/">Назад</a>
       </button>
 
       <button type="button" class="btn bg-secondary-subtle">
-        <a
-          href="https://report-dev.uat.sibcode.team/login"
-          class="link-light text-body-emphasis link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-        >
-          Выход</a
-        >
+        <a href="https://report-dev.uat.sibcode.team/login"
+          class="link-light text-body-emphasis link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+          Выход</a>
       </button>
     </div>
 
@@ -24,31 +18,17 @@
     <div class="d-flex mt-3">
       <div class="mx-2">
         <section id="mySection">
-          <date-picker
-            v-model="value2"
-            value-type="format"
-            format="YYYY-MM-DD"
-            placeholder="Выберите дату"
-          ></date-picker>
+          <date-picker v-model="value2" value-type="format" format="YYYY-MM-DD" placeholder="Выберите дату"></date-picker>
         </section>
       </div>
       -
       <div class="mx-2">
         <section>
-          <date-picker
-            v-model="value3"
-            value-type="format"
-            format="YYYY-MM-DD"
-            placeholder="Выберите дату"
-          ></date-picker>
+          <date-picker v-model="value3" value-type="format" format="YYYY-MM-DD" placeholder="Выберите дату"></date-picker>
         </section>
       </div>
 
-      <button
-        v-on:click="Showreport"
-        type="button"
-        class="btn mx-5 bg-secondary-subtle"
-      >
+      <button @click="Showreport" type="button" class="btn mx-5 bg-secondary-subtle">
         Выбрать период
       </button>
     </div>
@@ -135,13 +115,12 @@
         <tinymce id="d4" v-model="data4"></tinymce>
       </div>
     </div>
-    
+
 
     <div class="details_page-body-project_manager mt-5">
       <div class="text">Проектный менеджер</div>
       <select>
-        <option value="">1</option>
-        <option value="">2</option>
+        <option value="">ФИО проектного менеджера</option>
       </select>
     </div>
 
@@ -170,13 +149,7 @@ export default {
   components: { DatePicker },
   data() {
     return {
-      visible: false,
-      visible2: false,
-      visible3: false,
-      visible4: false,
-      visible5: false,
-      visible6: false,
-      visible7: true,
+
       value2: null,
       value3: null,
       hide: false,
@@ -194,17 +167,7 @@ export default {
         this.visible7 = !this.visible7;
       }
     },
-    Hide2: function () {
-      if (this.visible8 == false) {
-        this.visible8 = !this.visible8;
-      }
-      window.location.reload();
-    },
-    Hideshow2: function () {
-      if (this.visible8 == true) {
-        this.visible8 = !this.visible8;
-      }
-    },
+
     Showreport: function () {
       if (
         this.value2 !== null &&

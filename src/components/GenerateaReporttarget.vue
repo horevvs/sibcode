@@ -40,7 +40,7 @@
       </div>
 
       <button
-        v-on:click="Showreport"
+        @dblclick="Showreport"
         type="button"
         class="btn mx-5 bg-secondary-subtle">
         Выбрать период
@@ -119,8 +119,7 @@
     <div class="details_page-body-project_manager mt-5">
       <div class="text">Проектный менеджер</div>
       <select>
-        <option value="">1</option>
-        <option value="">2</option>
+        <option value="">ФИО проектного менеджера</option>
       </select>
     </div>
 
@@ -145,41 +144,23 @@ export default {
   components: { DatePicker },
   data() {
     return {
-      // visible: false,
-      // visible2: false,
-      // visible3: false,
-      // visible4: false,
-      // visible5: false,
-      // visible6: false,
-      // visible7: true,
-      // value2: null,
-      // value3: null,
+      value2: null,
+      value3: null,
       hide: false,
       checked: true,
     };
   },
   methods: {
-    // Hide: function () {
-    //   if (this.visible7 == false) {
-    //     this.visible7 = !this.visible7;
-    //   }
-    // },
-    // Hideshow: function () {
-    //   if (this.visible7 == true) {
-    //     this.visible7 = !this.visible7;
-    //   }
-    // },
-    // Hide2: function () {
-    //   if (this.visible8 == false) {
-    //     this.visible8 = !this.visible8;
-    //   }
-    //   window.location.reload();
-    // },
-    // Hideshow2: function () {
-    //   if (this.visible8 == true) {
-    //     this.visible8 = !this.visible8;
-    //   }
-    // },
+    Hide: function () {
+      if (this.visible7 == false) {
+        this.visible7 = !this.visible7;
+      }
+    },
+    Hideshow: function () {
+      if (this.visible7 == true) {
+        this.visible7 = !this.visible7;
+      }
+    },
     Showreport: function () {
       if (
         this.value2 !== null &&
