@@ -135,9 +135,6 @@
   </div>
 </template>
 
-<!-- <style>
-@import "../css/style.css";
-</style> -->
 
 <script>
 import DatePicker from "vue2-datepicker";
@@ -148,41 +145,41 @@ export default {
   components: { DatePicker },
   data() {
     return {
-      visible: false,
-      visible2: false,
-      visible3: false,
-      visible4: false,
-      visible5: false,
-      visible6: false,
-      visible7: true,
-      value2: null,
-      value3: null,
+      // visible: false,
+      // visible2: false,
+      // visible3: false,
+      // visible4: false,
+      // visible5: false,
+      // visible6: false,
+      // visible7: true,
+      // value2: null,
+      // value3: null,
       hide: false,
       checked: true,
     };
   },
   methods: {
-    Hide: function () {
-      if (this.visible7 == false) {
-        this.visible7 = !this.visible7;
-      }
-    },
-    Hideshow: function () {
-      if (this.visible7 == true) {
-        this.visible7 = !this.visible7;
-      }
-    },
-    Hide2: function () {
-      if (this.visible8 == false) {
-        this.visible8 = !this.visible8;
-      }
-      window.location.reload();
-    },
-    Hideshow2: function () {
-      if (this.visible8 == true) {
-        this.visible8 = !this.visible8;
-      }
-    },
+    // Hide: function () {
+    //   if (this.visible7 == false) {
+    //     this.visible7 = !this.visible7;
+    //   }
+    // },
+    // Hideshow: function () {
+    //   if (this.visible7 == true) {
+    //     this.visible7 = !this.visible7;
+    //   }
+    // },
+    // Hide2: function () {
+    //   if (this.visible8 == false) {
+    //     this.visible8 = !this.visible8;
+    //   }
+    //   window.location.reload();
+    // },
+    // Hideshow2: function () {
+    //   if (this.visible8 == true) {
+    //     this.visible8 = !this.visible8;
+    //   }
+    // },
     Showreport: function () {
       if (
         this.value2 !== null &&

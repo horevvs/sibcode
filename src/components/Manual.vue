@@ -75,9 +75,7 @@
       </li>
       <li>
         Для начала надо создать приложение для аккаунда директ. Для этого идём
-        <a style="color: blue" href="https://oauth.yandex.ru/client/new"
-          >Сюда</a
-        >
+        <a style="color: blue" href="https://oauth.yandex.ru/client/new">Сюда</a>
       </li>
       <li>
         Заполняем все поля самостоятельно. Только Для какой платформы нужно

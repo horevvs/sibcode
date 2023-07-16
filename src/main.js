@@ -22,8 +22,7 @@ Vue.component('tinymce', tinymce)
 
 
 Vue.use(VueRouter);
-// Vue.use(BootstrapVue)
-// Vue.use(IconsPlugin)
+
 
 const routes = [
 
@@ -83,16 +82,6 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
-  data() {
-    return { 
-      visible: false,
-      visible2: false,
-      visible3: false,
-      visible4: false,
-      visible5: false,
-      visible6: false
-     }
-  },
   render: (h) => h(App),
 }).$mount("#app");
 

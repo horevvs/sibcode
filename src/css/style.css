@@ -19,9 +19,9 @@
 
 .form-check-input {
   border-color: #545454;
-
 }
-.has{
+
+.has {
   background-color: rgb(151, 148, 148);
 }
 
@@ -33,7 +33,6 @@
   text-decoration: underline
 }
 
-
 .form-input::placeholder {
   text-decoration: underline
 }
@@ -44,11 +43,8 @@
   padding: 10px 20px;
   cursor: pointer;
   border: 1px solid #000;
-
 }
 
-cursor:hover{
+cursor:hover {
   color: red;
 }
-
-

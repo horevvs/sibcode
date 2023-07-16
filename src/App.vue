@@ -23,30 +23,6 @@ export default {
     Archive,
     AddExitheader,
     Linki
-  },
-  data() {
-    return {
-      visible: false,
-      visible2: false,
-      visible3: false,
-      visible4: false,
-      visible5: false,
-      visible6: false,
-      visible7: true,
-      visible8: true,
-      isActive: true,
-      isActiveseo: true,
-      isActivesmm: true,
-      isActivetarget: true
-    };
-
-  },
-  methods: {
-    Hide2: function () {
-      if (this.visible8 == false) {
-        this.visible8 = !this.visible8;
-      }
-    },
   }
 };
 </script> 

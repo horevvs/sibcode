@@ -12,7 +12,8 @@
       <button type="button" class="btn btn-secondary">
         <a href="https://report-dev.uat.sibcode.team/login"
           class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-          Выход</a>
+          Выход
+        </a>
       </button>
     </div>
   </div>

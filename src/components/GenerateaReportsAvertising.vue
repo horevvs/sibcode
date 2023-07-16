@@ -12,9 +12,7 @@
           Выход</a>
       </button>
     </div>
-
     <div class="text-center mx-5">Формирование отчёта</div>
-
     <div class="d-flex mt-3">
       <div class="mx-5">
         <section id="mySection">
@@ -27,16 +25,13 @@
           <date-picker v-model="value3" value-type="format" format="YYYY-MM-DD" placeholder="Выберите дату"></date-picker>
         </section>
       </div>
-
       <button @click="Showreport" type="button" class="btn mx-5 bg-secondary-subtle">
         Выбрать период
       </button>
     </div>
-
     <div class="fs-5 mx-5 mt-2 " v-show="hide">
       Отчетный период за: {{ value2 }} - {{ value3 }}
     </div>
-
     <div class="table1 mx-5 mt-5">
       <table>
         <tr>
@@ -65,7 +60,6 @@
         </div>
       </div>
     </div>
-
     <div>
       <div class="text text_head mt-5 mx-5">Конверсии</div>
       <div class="preloader hide">
@@ -74,14 +68,12 @@
       <label for="Callibri" class="text mx-5">Звонки (Callibri)</label>
       <input name="Callibri" type="text" class="col-1" value="0">
     </div>
-
     <div class="text text_head mx-5 mt-5">Свои цели</div>
     <div class="task1 mx-5 mt-1" id="target">
       <input class="task_name" id='res' type="text" placeholder="type task">
       <input class="task_count  mx-3 col-1" id='res2' type="text" value="">
     </div>
     <button @click="Addtask" type="button" class="btn  mx-5 mt-3 btn-outline-secondary">Add task</button>
-
     <div>
       <div class="mx-5 mt-5">
         <p> <b> Что было сделано</b> </p>
@@ -96,42 +88,29 @@
         <tinymce id="d3" v-model="data3"></tinymce>
       </div>
     </div>
-
     <div class="details_page-body-project_manager mx-5 mt-5">
       <div class="text">Проектный менеджер</div>
       <select></select>
     </div>
-
     <button type="button" class="btn btn-secondary mx-5 col-2 mt-5">
       Сформировать PDF отчёт
     </button>
-
     <div class="details_page-body-delete_pdf createreport mx-5">
       Удалить отчёт <span style="display: none"></span> с сервера (Нажать только
       после создания)
     </div>
-
-
-
-
-
-
   </div>
 </template>
-
-
 
 
 <style>
 @import "../css/style.css";
 </style>
 
-Ы
 
 <script>
 import DatePicker from "vue2-datepicker";
 import "vue2-datepicker/index.css";
-
 export default {
   name: "App",
   components: { DatePicker },
