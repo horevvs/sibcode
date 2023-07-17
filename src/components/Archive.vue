@@ -76,7 +76,7 @@
 
           <router-link
             to="/changeproject"
-            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-75-hover"
             ><div class="text-dark">Настройки</div></router-link
           >
         </div>
